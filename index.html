@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanSync</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PlanSync</h1>
+        <button id="toggleMode">Dark Mode</button>
+    </header>
+    <main>
+        <div id="personalTasks" class="task-list">
+            <h2>Personal Tasks</h2>
+        </div>
+        <div id="workTasks" class="task-list">
+            <h2>Work Tasks</h2>
+        </div>
+        <div id="taskForm" class="task-form">
+            <h2>Create New Task</h2>
+            <div class="input-group">
+                <input type="text" id="taskTitle" placeholder="Task Title">
+                <input type="text" id="taskTime" placeholder="Task Time">
+            </div>
+            <div class="task-type">
+                <label>
+                    <input type="radio" name="taskType" value="personal" checked> Personal Task
+                </label>
+                <label>
+                    <input type="radio" name="taskType" value="work"> Work Task
+                </label>
+            </div>
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        
+    </main>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
